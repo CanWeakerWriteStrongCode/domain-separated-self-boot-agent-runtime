@@ -54,6 +54,82 @@ In one sentence: **"Units evolve autonomously; governance anchors keep control."
 
 The alternating negation of self-boot and governance drives the system in **spiral ascent**: self-boot forces governance to upgrade, and governance in turn relaxes constraints for bolder self-boot — the two are mutual ladders, not a static equilibrium.
 
+### 3.2.1 The Transformation Mechanism: Two Interlocking PDCA Loops
+
+The transformation of productive forces into relations of production does not happen automatically the moment "new modes of production keep emerging." **Productive forces have their own PDCA loop, and relations of production have their own PDCA loop; the two loops interlock and drive each other** — the upgrade of the relations of production does not automatically follow the productive forces; it is only after the productive forces' upgrade "breaks the old equilibrium" that the relations' own loop catches up.
+
+**The productive-forces loop (self-evolution of tools / modes of production)**:
+
+- **D** Work using tools (the agent invokes harness in real tasks)
+- **C** Tool introspection (mechanical signals + usage summaries: retries, friction, inefficiency)
+- **P** Propose new tools / new modes of production (new plugins, new tool versions)
+- **A** Approve and promote (write-and-run in the sandbox → version goes live → registered into effect)
+
+Output: **new productive forces**. This loop is the most fully mechanized (tool introspection, sandbox promotion, capability registry — see the §3.3 example).
+
+**The relations-of-production loop (self-evolution of governance / processes / rules)**:
+
+- **D** The organization runs under current rules, processes, and approval gates
+- **C** Periodic observer review + privilege-escalation audit + process inspection — checking not only "how well the work got done" but "**whether the rules themselves still fit the current mode of production**": bottlenecks, rigidity, misplaced approval gates, outdated permission boundaries
+- **P** Relations-of-production revision proposals: new process definitions, new approval gates, granting or tightening permissions, revising central principles, even new domain divisions and governance forms (§7)
+- **A** The governance anchor approves the revision and publishes it (revision power rests with humans / controlled processes, see §3.1); validated results are solidified into central principles, ineffective ones are rolled back
+
+Output: **new relations of production**.
+
+**Interlocking drive — the mechanism of "when productive forces upgrade, how do the relations of production follow?"**:
+
+- **Passive drive (friction-driven)**: every time the productive-forces loop turns, its landing (the new tool / new mode of production from A) inevitably breaks against or touches the old boundary of the relations of production — denied privilege escalations, approval bottlenecks, process mismatches, outdated rules. All these **friction signals** flow into the C of the relations-of-production loop (audit/observer), driving that loop to revise and catch up. So "productive forces drive the relations of production" is not a slogan — it means the landing of the productive forces physically collides with old rule boundaries, produces observable friction, and triggers revision.
+- **Active drive (review-driven)**: the relations-of-production loop also turns on its own initiative — the observer periodically reviews the rules/processes themselves, not waiting for the productive forces to collide, actively finding "this rule already needs to change."
+
+The net effect of the two interlocking loops is §3.2's **spiral ascent**: productive-forces loop A (new tool lands) → relations-of-production loop C (senses lag/friction) → P/A (revise: loosen or set boundaries) → the productive-forces loop's next D turns more boldly within the new boundaries.
+
+**The governance anchor** is the executor of "standardization" in A of the relations-of-production loop: solidifying validated experience into rules and rolling back what does not fit — "control" runs through both loops, keeping neither out of control.
+
+Examples:
+
+- **Productive-forces loop**: AI writes release notes with harness for the third time; C (tool introspection) finds "every time the change list is assembled by hand" → P proposes a "release-note generator" plugin → A approves and registers it, generated automatically from then on. The productive-forces loop turns once.
+- **Relations-of-production loop**: C (observer) finds "UI review always stalls at the same node waiting for a human" → P proposes adjusting the process node / adding review automation → A approves and the new process takes effect → validated. Or C (privilege-escalation audit) finds "a certain type of operation is frequently denied" → P proposes granting permission or tightening rules → A revises central principles. The relations-of-production loop turns once.
+
+**In one sentence: productive-forces upgrade ≠ automatic relations-of-production upgrade; the relations' "following" depends on its own loop — friction signals from the productive forces' landing (passive) and active review of the rules themselves (active), revised and caught up through C→P→A. Only when both loops are individually controlled and interlock to drive each other does the organization ascend spirally.**
+
+### 3.2.2 The Intellectual Anchors: Bridging to Established Thought
+
+The interlocking two loops are not an isolated invention — they are isomorphic to four mature schools of thought, each of which has a concrete landing point in this system's code mechanisms.
+
+**① Double-Loop Learning (Argyris & Schön) — why two loops**
+
+Organizational-learning theory distinguishes two kinds of improvement: **single-loop learning** does things better within existing rules; **double-loop learning** questions and modifies the rules themselves. The paradigm's two loops are precisely these two kinds of learning:
+
+- **Single loop (productive-forces loop)**: the agent writes release notes for the third time → tool introspection writes the "change list is assembled by hand every time" signal into the tool-call feedback → proposes a "release-note generator" plugin → submits for approval → approved, registered into the plugin capability center, hot-plugged into effect → generated automatically next time. **The rules (release process) did not change; the system got smarter within the rules.**
+- **Double loop (relations-of-production loop)**: the observer's periodic audit finds "the release-approval node waits on a human for 2 days, bottleneck indicators abnormal" → proposes revising the process definition (remove or replace that node) → the governance anchor approves → a new process version takes effect → **the rules themselves were changed.**
+
+**② Law of Requisite Variety (Ashby) — why governance must evolve with the productive forces**
+
+The cybernetic law: the variety of the controller must be ≥ the variety of the system being controlled, otherwise control is lost. Here, what is being controlled is an increasingly diverse mode of production:
+
+- AI self-boot keeps increasing capability identifiers (from a few built-in to dozens self-booted), and calling scenarios and privilege-escalation patterns grow along with them.
+- If central principles were only fixed static rules, any new capability or new escalation beyond the rules' coverage → default allow or default deny → loss of control.
+- The response is "evolvable governance": approving a new capability simultaneously adds rules (approval and rule revision are linked); the privilege-escalation audit finds "a certain type of operation is frequently denied" → grant permission or tighten rules; central principles themselves can be versioned (isomorphic to plugin versions). **The governance means must keep up with the variety of the mode of production.**
+
+**③ Dissipative Structures / Negative Entropy (Prigogine) — why a governance anchor is needed**
+
+From a thermodynamic view, an open system maintains order by continuously importing negative entropy; far from equilibrium, self-organization emerges. Both faces of this law appear in the system:
+
+- **Self-boot = self-organization far from equilibrium**: each plugin/new process the AI produces adds +1 to the system's capability dimension; the structure becomes more complex and more ordered.
+- **The entropic trend**: more plugin versions, expanding events, more escalation attempts, scattered rules — without governance, the interior drifts toward config drift, permission chaos, and process loss of control.
+- **The governance anchor = negative-entropy injection**: the plugin-runtime registry reconciles against the control-plane versions to prevent drift; the audit log records everything to prevent escalation from spreading; approval + version + rollback prevent self-boot from tampering arbitrarily; distributed locks prevent scheduled tasks from running repeatedly — every mechanism is one "injection of order," pulling the system back from the edge of chaos toward order. **"Intelligence grows freely, order remains permanently controllable" is, in essence, a battle against entropy.**
+
+**④ Directed Evolution (variation—selection—retention) — why every self-boot step needs approval**
+
+Evolution = variation + selection + retention; this system's self-boot is an artificialized, directed version of the same scheme:
+
+- **Variation**: the agent generates a plugin draft with the plugin-proposal tool → the draft enters a pending-review state.
+- **Selection (approval = artificialized natural selection)**: the draft trial-runs in the sandbox's development state (small-scale validation) → submitted for approval → humans/the governance anchor pass it (retain) or reject it (eliminate).
+- **Retention**: once passed, it becomes an official version and registers into the plugin runtime → its capability identifier enters the discovery route, is invoked by subsequent tasks, and becomes organizational "genes"; rollback is removing genes that no longer fit the environment.
+- Difference from natural evolution: variation is purposeful (AI intelligence, not random mutation) and selection is directional (the governance anchor steers toward set goals, not blind environmental pressure) — hence **directed evolution**.
+
+In one sentence: double-loop learning answers "why two loops," requisite variety answers "why governance must evolve," dissipative structures answer "why a governance anchor is needed," and directed evolution answers "why every step needs approval" — together the four schools confirm: **this set of organizational laws is not an invention but the mechanized landing of mature laws.**
+
 ### 3.3 Three Structural Core Elements
 
 1. **Domain separation** — decomposes the system into mutually isolated, clearly-responsible independent units (domains). Units do not run exposed and do not cross boundaries; faults do not spread and chaos does not propagate.
@@ -68,6 +144,15 @@ flowchart TD
     J -->|Involves a safety red line| Y[Local principle yields to central principle]
     J -->|Central principle has fallen behind the mode of production| R[Central principle revised via controlled process]
 ```
+
+**The complete lifecycle of controlled self-boot (example)** — illustrated end-to-end with "the AI discovers in collaboration that it keeps having to write release notes":
+
+1. **Discovery**: in process execution, the agent writes release notes for the third time and recognizes a reusable pattern (**instant discovery**); the observer's periodic audit also lists it as a candidate (**periodic discovery**); tool introspection finds "assembling the change list" is repeatedly done by hand (**tool introspection**). Three discovery channels converge at one point.
+2. **Write-and-run (the freedom of self-boot)**: the agent drafts a "release-note generator" plugin and loads it into the sandbox's **development state** to trial-run immediately — it may only touch sandbox resources and never production; the boundary is guaranteed by the sandbox.
+3. **Promotion (the control of self-boot)**: trial run satisfactory → submit for approval → approved → version officially takes effect → registered into the plugin capability registry (contract, capability identifiers, event subscriptions) → begins receiving real business/IM event traffic (e.g., "a group message matching the keyword 'release' triggers it").
+4. **Retention and rollback**: plugins are version-managed and old versions can be rolled back at any time, with full audit; if a plugin performs poorly, tool introspection will summarize again and propose an upgrade or retirement — a new summary opens a new loop.
+
+This example shows the three elements of self-boot in place: **discovery (summary-driven) — execution (sandbox freedom) — promotion (governance-controlled)**, with every step observably and auditably recorded.
 
 ### 3.4 Carriers: One Idea, Many Landing Forms
 
@@ -111,19 +196,27 @@ In this system, humans are always **designers, inspectors, and final approvers**
 
 Let agents truly land in enterprise R&D and automated production, moving from the demonstration stage into the production stage. In the long run, perhaps this paradigm is not limited to software R&D — **large-scale socialized autonomous robot production** can be organized with a similar architecture: the center holds global rules and red lines, while production units evolve autonomously under layered control, continuously self-booting within controlled boundaries.
 
-## 5. Three Core Design Principles (Core of the Architectural Originality)
+## 5. Five Core Design Principles (Core of the Architectural Originality)
 
 ### Principle 1: All functionality and environments are domain-separated (all-things-are-domains)
 
-All running functions, modules, and production environments in the system are decomposed into independent "trust domains." No code runs exposed or boundary-less; from the root, functional chaos, cross-environment interference, and fault propagation are avoided.
+All running functions, modules, and production environments in the system are decomposed into independent "trust domains." No code runs exposed or boundary-less; from the root, functional chaos, cross-environment interference, and fault propagation are avoided. **A domain is not merely "isolated" — it is an "autonomous evolutionary unit"**: within governance boundaries, each domain can autonomously improve its own capabilities, accumulate local principles, and evolve independently (see §3.3).
 
-### Principle 2: AI self-upgrade must be constrained (self-boot must be controlled)
+### Principle 2: Self-boot is encouraged, but must be controlled (controlled self-boot)
 
-AI agents generating code, adding features, modifying workflows, and iterating on their own capabilities is collectively called "self-boot." Self-boot takes **plugin-based harness** as its landing form (see §6.3): AI uses these tools to do work while continuously improving the tools themselves through the plugin mechanism — using tools and, in the process, making better tools. In engineering, coding tools go through **harness hot-plug** and workflow and other organizational components through **WASM hot-plug** (see §8.4). Unlike the free-form AI self-boot in the wild, all self-boot behavior in this architecture passes permission validation, security review, and version locking, preventing AI from making arbitrary changes, harming itself, or escalating privileges.
+AI's autonomous evolution is a **core value of this architecture, not an object to be guarded against**: AI generating code, adding features, modifying workflows, and iterating on its own capabilities during process execution is collectively called "self-boot." Self-boot takes **plugin-based harness** as its landing form (see §6.3): AI uses these tools to do work while continuously improving the tools themselves through the plugin mechanism — using tools and, in the process, making better tools. In engineering, coding tools go through **harness hot-plug** and workflow and other organizational components through **WASM hot-plug** (see §8.4). **Freedom and control are two sides of one coin**: AI is encouraged to self-boot boldly — this is the engine of system evolution; but all self-boot behavior passes permission validation, security review, and version locking — this is the guarantee against loss of control, preventing AI from making arbitrary changes, harming itself, or escalating privileges. The faster the self-boot, the more the governance anchor must hold the direction: evolution speed and governance intensity are directly proportional — this is the complete meaning of "controlled self-boot" (see §3.2).
 
-### Principle 3: Production environments are strictly isolated — artifacts in, no mutation (strict artifact isolation)
+### Principle 3: The system needs a governance anchor (a unified source of order, itself evolvable)
 
-The workbench where AI creates, develops, and generates code is completely separate from production environments. AI can only output "result artifacts" such as code, plugins, and configuration; it cannot directly modify or operate production systems, preventing AI from breaking the business.
+The system needs one (or a group of) governance domains as an **anchor**: uniformly controlling rules, permissions, review, and interception — it is both the "boundary of free growth" and the "direction setter," delimiting boundaries and priorities and steering autonomous evolution toward set goals. The governance anchor is not a set of rigid dead rules: it itself **evolves under control** — when the mode of production (productive forces) evolves beyond what the old rules can cover, central principles are revised through a controlled process (see §3.2's interlocking loops); the variety of governance means must keep up with the variety of the mode of production, otherwise loss of control is inevitable (the law of requisite variety, see §3.2.2).
+
+### Principle 4: Production environments are strictly isolated — artifacts in, no mutation (strict artifact isolation)
+
+The workbench where AI creates, develops, and generates code is completely separate from production environments. AI can only output "result artifacts" such as code, plugins, and configuration; it cannot directly modify or operate production systems, preventing AI from breaking the business. Artifacts enter production only after human-approved merging (e.g., Git feature branches + merge review), fully auditable, interceptable, and rollback-able.
+
+### Principle 5: Human-AI collaboration, with responsibility resting on humans (humans in the loop)
+
+AI and humans are **co-subjects with different division of labor** (see §3.1): AI undertakes large-scale, high-concurrency production execution and autonomous evolution; humans undertake goal setting, output review, and rule guarding. At every key decision — self-boot promotion, process advancement, rule revision, artifact merging — there is a **human in the loop**: humans remain the designers, inspectors, and final approvers; ultimate responsibility rests with humans and is not delegated away by AI's subjecthood in production.
 
 ## 6. Core Domain Model Design (Architectural Originality Highlight)
 
@@ -390,6 +483,15 @@ In one sentence: **coding tools go through harness, work organization goes throu
 
 The two self-boot mechanisms each land in their own domain: coding-tool self-boot in the workbench (coding domain), workflow self-boot in the work-organization domain. **Self-boot is itself domain-separated** — each domain self-boots by its own mechanism, never crossing or interfering. This is exactly how the domain-separation idea manifests in self-boot mechanisms (see §3.3).
 
+#### The Complete Landing of Self-Boot
+
+Controlled self-boot converges in engineering to four supporting pieces:
+
+1. **The plugin capability registry (a simplified Nacos)**: lets the system know "how to call, and whom to call" — plugin registration, invocation contracts (OpenAI function schemas), discovery routing by capability key, and control-plane/runtime reconciliation. AI-written plugins are managed capability assets, not scattered scripts.
+2. **Write-and-run in the sandbox → approval for promotion**: a draft plugin trial-runs immediately in the sandbox's development state (the freedom of self-boot); promotion to an externally usable capability requires approval + versioning (the control of self-boot), and can be rolled back at any time.
+3. **Business-type plugins (the Feishu mini-services analogy)**: a plugin can be an "invoked tool," or it can be a **mini-service that subscribes to events and runs autonomously** (subscribing to IM group-message matches, task-status changes, flow-node entries, new documents), event-driven and self-executing — just like the host of mini-services on the Feishu platform.
+4. **Authorization as the boundary**: every action of AI is bounded by the data permissions of the authorizer (whoever clicks the flow gets their permissions used); enterprise content is read only through permission-bearing interfaces, with privilege escalation denied and audited — the freedom of self-boot always stays within the governance anchor's permission boundary.
+
 ### 8.5 Unified Architecture Core Rules of the Two Systems (Key Normalization Design)
 
 Whichever tech stack is chosen, the domain-separated controlled self-boot paradigm is entirely unchanged; this is the core confidence for long-term architecture evolution.
@@ -422,6 +524,8 @@ This paradigm is not designed from thin air — it has a natural precedent valid
 
 The paradigm converging on the human organizational form is exactly why it captures the organizational laws of complex production systems. Therefore **human organizations can be viewed as "Carrier Zero"** — a pre-existing, continuously running natural instance usable to validate this paradigm (carrier concept in §3.4).
 
+And this convergence goes beyond "domain separation + controlled self-boot + governance anchor" — even the **two-interlocking-loop mechanism** of §3.2.1 is something human organizations have validated over millennia: the Deming cycle (PDCA) and lean production (Toyota's kaizen) are precisely the industrial prototype of "productive-forces loop + relations-of-production loop." Inside large companies, **platform-engineering teams** correspond to tool introspection (productive-forces loop); **internal audit / risk / compliance** correspond to the observer and privilege-escalation audit (the C of the relations-of-production loop); **retrospectives and process re-engineering** correspond to summary and revision (P/A). The difference is only in precision and speed: human loops rely on people reporting bad news, holding meetings, and writing reports — friction signals are lossy, summaries have ceremony, and revision is subject to power struggles (see "essential differences" below); AI organizations make the same mechanism **data-driven, mechanized, and depoliticized** — friction fully recorded, summaries automatically driven, revisions controlled and rollback-able. This is the deeper meaning of "Carrier Zero": the paradigm is not designed from thin air but makes the organizational laws validated by humans into an executable system.
+
 At the same time, AI production systems differ fundamentally from human organizations, and these differences are precisely why "controlled self-boot + governance anchor" exist:
 
 - **Evolution speed**: AI self-boot iterates at millisecond scale; human institutions have inertia measured in years — controlled self-boot's constraints far outweigh human change management
@@ -449,7 +553,8 @@ In 2025–2026, academia and industry saw a wave of independent convergence arou
 - **Controlled self-boot + governance anchor at peer level**: self-boot is not an auxiliary capability but an architectural pillar equal to governance
 - **Self-boot domain-separated, two-channel landing**: coding tools via harness hot-plug; workflow and other organizational components via WASM hot-plug, each landing in its own domain
 - **Unified across carrier scales**: from enterprise software R&D to socialized robot production, the same paradigm reproduces self-similarly
-- **Productive forces / relations of production dialectic**: self-boot and governance ascend spirally in alternating negation, not static equilibrium
+- **Productive forces / relations of production dialectic**: self-boot and governance ascend spirally in alternating negation, not static equilibrium; and the concrete transformation mechanism is given — **two interlocking PDCA loops**: the productive-forces loop (tool introspection → new tools) and the relations-of-production loop (observer/audit → rule revision), each controlled and interlocking; the friction signals from the productive forces' landing colliding with old rule boundaries drive the relations to catch up (see §3.2.1)
+- **The conceptual core is isomorphic to established scholarship**: double-loop learning (Argyris & Schön), the law of requisite variety (Ashby), dissipative structures (Prigogine), directed evolution (Darwin/Campbell) — this paradigm is the mechanized landing of these mature laws, not the invention of new academic concepts (see §3.2.2)
 
 The above synthesis — production organization as lens, self-boot and governance as peers, cross-carrier self-similarity — to the best of the author's search, has no precedent. Any directional similarity is independent convergence, not reference.
 
