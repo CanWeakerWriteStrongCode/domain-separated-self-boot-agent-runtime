@@ -7,7 +7,7 @@
 
 ⚠️ Note: this project is currently **v0.1**, for validating the Domain-Separated Controlled Self-Boot Agent Architecture. It has not been validated in large-scale production environments; assess the risk yourself before deploying. Evolution path: see [Roadmap](#-roadmap) below.
 
-📌 Current status: concept & architecture-documentation stage, code implementation in progress — the repository's core is the [Architecture Whitepaper](docs/paradigm-en.md) (English translation; the Chinese original is [here](docs/original-2026-paradigm.md)).
+📌 Current status: concept & architecture-documentation stage, code implementation in progress — the repository's core is the [Architecture Whitepaper](docs/original-2026-paradigm-en.md) (English translation; the Chinese original is [here](docs/original-2026-paradigm.md)).
 
 ## Introduction
 
@@ -61,7 +61,7 @@ flowchart TD
 
 ## 📄 Documentation
 
-- [Architecture Whitepaper (English)](docs/paradigm-en.md) | full paradigm definition, product positioning, and dual-stack technical systems — IP archive document
+- [Architecture Whitepaper (English)](docs/original-2026-paradigm-en.md) | full paradigm definition, product positioning, and dual-stack technical systems — IP archive document
 - [项目说明 (Chinese)](docs/about-note.md) | design inspiration, development notes, future plans
 
 > As the project evolves, this section will be supplemented with security models, architecture decision records (ADR), and other documents.

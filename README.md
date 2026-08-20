@@ -62,7 +62,7 @@ flowchart TD
 ## 📄 文档
 
 - [架构白皮书](docs/original-2026-paradigm.md) ｜范式完整定义、产品定位与双栈技术体系，IP归档文档
-- [Architecture Whitepaper (English)](docs/paradigm-en.md) ｜英文对照译本，内容与中文原文一致
+- [Architecture Whitepaper (English)](docs/original-2026-paradigm-en.md) ｜英文对照译本，内容与中文原文一致
 - [项目说明](docs/about-note.md) ｜设计启发、开发说明、未来规划
 
 > 随着项目演进，此处将陆续补充安全模型、架构决策记录（ADR）等文档。
