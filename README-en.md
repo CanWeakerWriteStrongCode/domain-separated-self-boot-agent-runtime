@@ -64,6 +64,7 @@ flowchart TD
 - [Architecture Whitepaper (Chinese original)](docs/original-2026-paradigm.md) | the authoritative original whitepaper
 - [Architecture Whitepaper (English)](docs/original-2026-paradigm-en.md) | full paradigm definition, product positioning, and dual-stack technical systems — IP archive document (translation)
 - [项目说明 (Chinese)](docs/about-note.md) | design inspiration, development notes, future plans
+- [Project Note (English)](docs/about-note-en.md) | design inspiration, development notes, future plans
 
 > As the project evolves, this section will be supplemented with security models, architecture decision records (ADR), and other documents.
 
