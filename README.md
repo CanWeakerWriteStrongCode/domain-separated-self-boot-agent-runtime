@@ -63,10 +63,12 @@ flowchart TD
 
 - [架构白皮书](docs/original-2026-paradigm.md) ｜范式完整定义、产品定位与双栈技术体系，IP归档文档
 - [Architecture Whitepaper (English)](docs/original-2026-paradigm-en.md) ｜英文对照译本，内容与中文原文一致
+- [v0.1 实现计划](docs/v0.1-implementation-plan.md) ｜第一版实现计划：关键流程、模块总表、技术决策摘要、实施阶段
+- [v0.1 架构决策记录（ADR）](docs/v0.1-key-decisions.md) ｜第一版 14 条关键架构决策与风险清单
 - [项目说明](docs/about-note.md) ｜设计启发、开发说明、未来规划
 - [Project Note (English)](docs/about-note-en.md) ｜英文对照版本
 
-> 随着项目演进，此处将陆续补充安全模型、架构决策记录（ADR）等文档。
+> 随着项目演进，此处将陆续补充安全模型、更多架构决策记录（ADR）等文档。
 
 ## 🛠 技术栈（双栈策略）
 

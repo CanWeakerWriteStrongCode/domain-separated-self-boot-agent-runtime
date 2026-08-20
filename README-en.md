@@ -63,10 +63,12 @@ flowchart TD
 
 - [Architecture Whitepaper (Chinese original)](docs/original-2026-paradigm.md) | the authoritative original whitepaper
 - [Architecture Whitepaper (English)](docs/original-2026-paradigm-en.md) | full paradigm definition, product positioning, and dual-stack technical systems — IP archive document (translation)
+- [v0.1 Implementation Plan (Chinese)](docs/v0.1-implementation-plan.md) | first-version implementation plan: key flows, module list, technical decision summary, implementation phases
+- [v0.1 Architecture Decision Records / ADR (Chinese)](docs/v0.1-key-decisions.md) | first-version 14 key architecture decisions and risk checklist
 - [Project Note (Chinese)](docs/about-note.md) | design inspiration, development notes, future plans
 - [Project Note (English)](docs/about-note-en.md) | design inspiration, development notes, future plans
 
-> As the project evolves, this section will be supplemented with security models, architecture decision records (ADR), and other documents.
+> As the project evolves, this section will be supplemented with security models, more architecture decision records (ADR), and other documents.
 
 ## 🛠 Technology Stack (Dual-Stack Strategy)
 
