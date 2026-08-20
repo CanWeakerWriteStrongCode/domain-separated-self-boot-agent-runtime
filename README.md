@@ -1,6 +1,6 @@
 # domain-separated-self-boot-agent-runtime
 
-> **BaijiMind · 白鳍豚心智（别称 DolphinMind · 海豚心智）— 分域受控自举智能体运行时**
+> **BaijiMind · 白鳍智章（别称 DolphinMind · 海豚智章）— 分域受控自举智能体运行时**
 > Domain-Separated Controlled Self-Boot Agent Architecture · Trust-domain isolation, privileged governance domain, plugin-based self-boot · MIT License
 
 中文 | [English](README-en.md)
@@ -64,7 +64,8 @@ flowchart TD
 - [架构白皮书](docs/original-2026-paradigm.md) ｜范式完整定义、产品定位与双栈技术体系，IP归档文档
 - [Architecture Whitepaper (English)](docs/original-2026-paradigm-en.md) ｜英文对照译本，内容与中文原文一致
 - [v0.1 实现计划](docs/v0.1-implementation-plan.md) ｜第一版实现计划：关键流程、模块总表、技术决策摘要、实施阶段
-- [v0.1 架构决策记录（ADR）](docs/v0.1-key-decisions.md) ｜第一版 14 条关键架构决策与风险清单
+- [v0.1 架构决策记录（ADR）](docs/v0.1-key-decisions.md) ｜第一版 16 条关键架构决策与风险清单
+- **白鳍智章（BaijiMind）** ｜产品与阐述本范式的文章共用此品牌名——中文名白鳍智章、代号 BaijiMind、别称海豚智章（DolphinMind）
 - [项目说明](docs/about-note.md) ｜设计启发、开发说明、未来规划
 - [Project Note (English)](docs/about-note-en.md) ｜英文对照版本
 

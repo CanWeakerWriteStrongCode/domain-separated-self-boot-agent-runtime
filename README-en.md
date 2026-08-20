@@ -1,6 +1,6 @@
 # domain-separated-self-boot-agent-runtime
 
-> **BaijiMind · 白鳍豚心智 (a.k.a. DolphinMind · 海豚心智) — Domain-Separated Controlled Self-Boot Agent Runtime**
+> **BaijiMind · 白鳍智章 (a.k.a. DolphinMind · 海豚智章) — Domain-Separated Controlled Self-Boot Agent Runtime**
 > Domain-Separated Controlled Self-Boot Agent Architecture · Trust-domain isolation, privileged governance domain, plugin-based self-boot · MIT License
 
 English | [中文](README.md)
@@ -64,7 +64,8 @@ flowchart TD
 - [Architecture Whitepaper (Chinese original)](docs/original-2026-paradigm.md) | the authoritative original whitepaper
 - [Architecture Whitepaper (English)](docs/original-2026-paradigm-en.md) | full paradigm definition, product positioning, and dual-stack technical systems — IP archive document (translation)
 - [v0.1 Implementation Plan (Chinese)](docs/v0.1-implementation-plan.md) | first-version implementation plan: key flows, module list, technical decision summary, implementation phases
-- [v0.1 Architecture Decision Records / ADR (Chinese)](docs/v0.1-key-decisions.md) | first-version 14 key architecture decisions and risk checklist
+- [v0.1 Architecture Decision Records / ADR (Chinese)](docs/v0.1-key-decisions.md) | first-version 16 key architecture decisions and risk checklist
+- **白鳍智章 (BaijiMind)** | the unified brand name of both the product (codename BaijiMind) and the article expounding this paradigm
 - [Project Note (Chinese)](docs/about-note.md) | design inspiration, development notes, future plans
 - [Project Note (English)](docs/about-note-en.md) | design inspiration, development notes, future plans
 

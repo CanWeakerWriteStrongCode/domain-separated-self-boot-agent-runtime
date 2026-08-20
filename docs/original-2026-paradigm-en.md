@@ -20,8 +20,8 @@ Corresponding open-source project: domain-separated-self-boot-agent-runtime
 
 ## 2. Official Name and Positioning
 
-- Product codename: BaijiMind (白鳍豚心智)
-- Alternate name: DolphinMind (海豚心智)
+- Product codename: BaijiMind (白鳍智章)
+- Alternate name: DolphinMind (海豚智章)
 - Chinese name: 分域受控自举智能体架构
 - English name: Domain-Separated Controlled Self-Boot Agent Architecture
 

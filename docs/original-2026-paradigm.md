@@ -18,8 +18,8 @@
 
 ## 2. 架构正式名称与定位
 
-- 产品代号：BaijiMind（白鳍豚心智）
-- 别称：DolphinMind（海豚心智）
+- 产品代号：BaijiMind（白鳍智章）
+- 别称：DolphinMind（海豚智章）
 - 中文名称：分域受控自举智能体架构
 - 英文名称：Domain-Separated Controlled Self-Boot Agent Architecture
 

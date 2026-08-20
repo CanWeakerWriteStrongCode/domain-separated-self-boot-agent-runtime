@@ -4,8 +4,8 @@ An open-source landing repository for a personally original architecture.
 
 Chinese name: 分域受控自举智能体架构
 English name: domain-separated-self-boot-agent-runtime
-Codename: BaijiMind (白鳍豚心智)
-Alternate name: DolphinMind (海豚心智)
+Codename: BaijiMind (白鳍智章)
+Alternate name: DolphinMind (海豚智章)
 Mascot: the baiji (Yangtze river dolphin) — a tribute to DeepSeek's whale imagery: baiji dolphins live in coordinated groups and sense through echolocation, echoing the architecture's core of "multi-domain autonomy + mutual awareness and coordination". The baiji became functionally extinct due to uncontrolled human production activity; naming the project after it signifies "autonomous systems must be controlled, lest history repeat itself".
 
 ## Originality Statement

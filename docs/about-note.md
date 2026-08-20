@@ -4,8 +4,8 @@
 
 中文名：分域受控自举智能体架构
 英文名：domain-separated-self-boot-agent-runtime
-代号：BaijiMind（白鳍豚心智）
-别称：DolphinMind（海豚心智）
+代号：BaijiMind（白鳍智章）
+别称：DolphinMind（海豚智章）
 吉祥物：白鳍豚（致敬 DeepSeek 的鲸鱼意象——白鳍豚群居协同、声呐感知，呼应「多业务分域自治 + 互相感知协同」的架构内核；白鳍豚因人类生产活动失控而功能性灭绝，以它为名，寓意「自主系统必须受控，不重蹈覆辙」）
 
 ## 原创说明
