@@ -3,6 +3,8 @@
 > **BaijiMind · 白鳍豚心智 — 分域受控自举智能体运行时**
 > Domain-Separated Controlled Self-Boot Agent Architecture · Trust-domain isolation, privileged governance domain, plugin-based self-boot · MIT License
 
+中文 | [English](README-en.md)
+
 ⚠️ 提示：本项目目前为 **v0.1 版本**，用于验证分域受控自举智能体架构，尚未经过大规模生产环境验证，上线使用请自行评估风险。演进路径见文末 [Roadmap](#-roadmap)。
 
 📌 当前状态：概念与架构文档阶段，代码实现推进中——仓库当前核心是[架构白皮书](docs/original-2026-paradigm.md)。
@@ -60,6 +62,7 @@ flowchart TD
 ## 📄 文档
 
 - [架构白皮书](docs/original-2026-paradigm.md) ｜范式完整定义、产品定位与双栈技术体系，IP归档文档
+- [Architecture Whitepaper (English)](docs/paradigm-en.md) ｜英文对照译本，内容与中文原文一致
 - [项目说明](docs/about-note.md) ｜设计启发、开发说明、未来规划
 
 > 随着项目演进，此处将陆续补充安全模型、架构决策记录（ADR）等文档。
