@@ -1,13 +1,13 @@
 # domain-separated-self-boot-agent-runtime
 
-> **BaijiMind · 白鳍豚心智 — Domain-Separated Controlled Self-Boot Agent Runtime**
+> **BaijiMind · 白鳍豚心智 (a.k.a. DolphinMind · 海豚心智) — Domain-Separated Controlled Self-Boot Agent Runtime**
 > Domain-Separated Controlled Self-Boot Agent Architecture · Trust-domain isolation, privileged governance domain, plugin-based self-boot · MIT License
 
-> **English** | [中文](README.md)
+English | [中文](README.md)
 
 ⚠️ Note: this project is currently **v0.1**, for validating the Domain-Separated Controlled Self-Boot Agent Architecture. It has not been validated in large-scale production environments; assess the risk yourself before deploying. Evolution path: see [Roadmap](#-roadmap) below.
 
-📌 Current status: concept & architecture-documentation stage, code implementation in progress — the repository's core is the [Architecture Whitepaper](docs/original-2026-paradigm-en.md) (English translation; the Chinese original is [here](docs/original-2026-paradigm.md)).
+📌 Current status: concept & architecture-documentation stage, code implementation in progress — the repository's core is the [Architecture Whitepaper](docs/original-2026-paradigm-en.md) (English translation; the [Chinese original](docs/original-2026-paradigm.md) is authoritative).
 
 ## Introduction
 

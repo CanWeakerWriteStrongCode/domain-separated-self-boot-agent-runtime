@@ -1,6 +1,6 @@
 # domain-separated-self-boot-agent-runtime
 
-> **BaijiMind · 白鳍豚心智 — 分域受控自举智能体运行时**
+> **BaijiMind · 白鳍豚心智（别称 DolphinMind · 海豚心智）— 分域受控自举智能体运行时**
 > Domain-Separated Controlled Self-Boot Agent Architecture · Trust-domain isolation, privileged governance domain, plugin-based self-boot · MIT License
 
 中文 | [English](README-en.md)
