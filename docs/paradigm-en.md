@@ -1,7 +1,7 @@
 # Domain-Separated Controlled Self-Boot Agent Architecture · Original Paradigm Whitepaper (2026)
 
 > Author: CanWeakerWriteStrongCode
-
+>
 > Translation note: This is an English translation of the original Chinese whitepaper ([`docs/original-2026-paradigm.md`](original-2026-paradigm.md), v0.1, 2026-08-21). The Chinese original is the authoritative version; in case of any discrepancy, the Chinese version prevails.
 
 ## 1. Document Description and Version
@@ -165,7 +165,7 @@ flowchart TD
     B -. Local principles reported up .-> GOV
 ```
 
-The tree-node form is an intermediate stage on the path from centralized to fully peer-to-peer (see §7): the deeper the tree's levels and the more governance nodes, the closer to distributed centers. Local-principle conflicts are reported level by level up the tree to the superior governance node for adjudication (see §3.3). This structure is isomorphic to the governance relationship between a "center and autonomous regions": the center establishes global principles; autonomous regions hold autonomy within the central legal framework and may enact local regulations, but must not conflict with higher law; on conflict, higher law prevails and the local yields to the center.
+The tree-node form is an intermediate stage on the path from centralized to fully peer-to-peer (see §7): the deeper the tree's levels and the more governance nodes, the closer to distributed centers. Local-principle conflicts are reported level by level up the tree to the superior governance node for adjudication (see §3.3). This structure is isomorphic to the governance relationship between "headquarters and regional branches": headquarters establishes global principles; regional branches hold autonomy within the headquarters' framework and may enact regional procedures, but must not conflict with the higher-level framework; on conflict, the higher-level framework prevails and the local yields to the center.
 
 ### 6.1 Privileged Governance Domain (System Security Root)
 
@@ -249,7 +249,7 @@ The arrangement of the governance layer (privileged governance domain) is an ind
 - Advantages: no single-point bottleneck, proximity governance across regions, horizontal scaling with scale
 - Limitations: requires consistent rule distribution and synchronization; governance consistency (strong/final consistency) is the core difficulty
 
-The tree-node form (§6) can combine with distributed centers — the internal governance nodes of the tree are the distributed centers, while the top retains a global anchor, forming a "layered federation" hybrid.
+The tree-node form (§6) can combine with distributed centers — the internal governance nodes of the tree are the distributed centers, while the top retains a global anchor, forming a "layered autonomy" hybrid.
 
 Adjudication difference: in centralized mode, the sole governance anchor adjudicates; in distributed-center mode, the center-node group **adjudicates jointly under a unified contract** — the contract is the only source of global rule consistency (see §3.3).
 
@@ -409,15 +409,15 @@ The above systems are delivered in engineering as: self-boot fully traceable, in
 
 ## 9. Extension: Human Organizations, a Natural Prior Carrier
 
-This paradigm is not designed from thin air — it has a natural precedent validated by millennia of trial and error: **human organizations**. Companies, governments, and societies are essentially instances of "domain separation + controlled self-boot + governance anchor," corresponding one-to-one with the conceptual core of §3:
+This paradigm is not designed from thin air — it has a natural precedent validated by millennia of trial and error: **human organizations**. Companies, institutions, and societies are essentially instances of "domain separation + controlled self-boot + governance anchor," corresponding one-to-one with the conceptual core of §3:
 
 | This paradigm | Corresponding human organization |
 | --- | --- |
 | Domain separation | Departments and professional division of labor: each doing its own job, fault isolation |
-| Governance anchor | Government / management / constitution: uniformly controlling rules, permissions, audit |
+| Governance anchor | Management / corporate charter: uniformly controlling rules, permissions, audit |
 | Controlled self-boot | Innovation and change within organizations: new processes, new tools, via approval and compliance |
-| Local vs central principles | Local regulations vs central law: conflicts adjudicated by judicial review |
-| Centralized → distributed center → peer | Centralization → decentralization → federalism / networked organizations |
+| Local vs central principles | Regional procedures vs corporate charter: conflicts adjudicated by governance review |
+| Centralized → distributed center → peer | Centralized control → decentralized management → divisional structure / networked organizations |
 | Productive forces / relations of production dialectic | Philosophy's depiction of the organizational form of human society |
 
 The paradigm converging on the human organizational form is exactly why it captures the organizational laws of complex production systems. Therefore **human organizations can be viewed as "Carrier Zero"** — a pre-existing, continuously running natural instance usable to validate this paradigm (carrier concept in §3.4).
@@ -443,7 +443,7 @@ At the same time, AI production systems differ fundamentally from human organiza
 
 ### A.2 Comparison with Related Research
 
-In 2025–2026, academia and industry saw a wave of independent convergence around "controlled / constitutional self-evolving agents" (e.g., constitutional self-evolution, recursive self-improvement, polycentric governance). This paradigm moves in the same direction; its independent highlights:
+In 2025–2026, academia and industry saw a wave of independent convergence around "controlled / charter-style self-evolving agents" (e.g., charter-style self-evolution, recursive self-improvement, polycentric governance). This paradigm moves in the same direction; its independent highlights:
 
 - **Production organization as the primary lens**: most work focuses on AI safety governance (preventing loss of control); this paradigm focuses on how production systems are organized — pipelines, units, and governance
 - **Controlled self-boot + governance anchor at peer level**: self-boot is not an auxiliary capability but an architectural pillar equal to governance
