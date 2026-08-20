@@ -61,14 +61,15 @@ flowchart TD
 
 ## 📄 Documentation
 
-- [Architecture Whitepaper (English)](docs/original-2026-paradigm-en.md) | full paradigm definition, product positioning, and dual-stack technical systems — IP archive document
+- [Architecture Whitepaper (Chinese original)](docs/original-2026-paradigm.md) | the authoritative original whitepaper
+- [Architecture Whitepaper (English)](docs/original-2026-paradigm-en.md) | full paradigm definition, product positioning, and dual-stack technical systems — IP archive document (translation)
 - [项目说明 (Chinese)](docs/about-note.md) | design inspiration, development notes, future plans
 
 > As the project evolves, this section will be supplemented with security models, architecture decision records (ADR), and other documents.
 
 ## 🛠 Technology Stack (Dual-Stack Strategy)
 
-> One architecture, two landing technical systems; the domain model and paradigm are fully unified — see [Whitepaper §8 Two Technical Systems](docs/paradigm-en.md#8-two-technical-systems-engineering-landing-route)
+> One architecture, two landing technical systems; the domain model and paradigm are fully unified — see [Whitepaper §8 Two Technical Systems](docs/original-2026-paradigm-en.md#8-two-technical-systems-engineering-landing-route)
 
 - System A (primary · enterprise): Java + Golang hybrid — Java carries the rules/privileged governance domain, Golang carries execution/business self-boot domains
 - System B (lightweight · cloud-native): Golang full stack unified
