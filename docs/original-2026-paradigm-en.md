@@ -154,6 +154,15 @@ flowchart TD
 
 This example shows the three elements of self-boot in place: **discovery (summary-driven) — execution (sandbox freedom) — promotion (governance-controlled)**, with every step observably and auditably recorded.
 
+**The success criteria of self-boot** — whether a self-boot act "succeeds" is not judged by "whether a plugin was produced" but by four criteria:
+
+1. **Authentic origin**: self-boot must be organically discovered from the **summary of work** (the observer / tool introspection / recognizing a reusable pattern in collaboration), not an arrangement staged for demonstration — no summary, no self-boot; this is the starting point of "work summary → relations-of-production development" (§3.2.1).
+2. **Controlled throughout**: from variation (drafting), selection (approval), to retention (registration into effect), every step stays within the governance anchor's boundaries, auditable and rollback-able — freedom and control are two sides of one coin (§5, Principle 2).
+3. **Real value**: it is actually adopted by the organization, replacing what used to be repetitive manual work, rather than "produced but unused" idling.
+4. **Sustained evolution**: it leaves evolutionary traces and drives a change in the relations of production (processes/rules revised because of it, §3.2.1 relations-of-production loop), and can undergo tool introspection and produce version upgrades — compounding, rather than a one-off accident.
+
+The opposite is **pseudo-self-boot** (not a success): self-booting for demonstration (staged), produced but unused (idling), or breaking the controlled boundary (loss of control) — all three are deviations from "controlled self-boot": the freedom of self-boot must always stay within governance boundaries.
+
 ### 3.4 Carriers: One Idea, Many Landing Forms
 
 This idea can land on any "autonomous production + controlled governance" system; each landing form is a **carrier**:
@@ -544,6 +553,8 @@ At the same time, AI production systems differ fundamentally from human organiza
 4. **Constraint — central principles**: but when AI modifies the production environment, it must be constrained by central principles
 5. **Dialectics — productive forces and relations of production**: new modes of production in turn push continuous revision of central principles — just like the dialectical movement between productive forces and relations of production
 6. **Convergence — the paradigm takes shape**: the above independent reasoning converges into this paradigm: domain separation + controlled self-boot + governance anchor
+
+**A note on the term "self-boot"** — in engineering, "self-boot" borrows from the computer term bootstrap (a bootstrapping program: using the system itself to start the system), i.e., "using tools to make tools"; in thought it is isomorphic to **autopoiesis (Maturana & Varela)** — an open system maintains and renews itself by self-producing the components that constitute it. The paradigm's self-boot is precisely organizational autopoiesis: through the summary of work (§3.2.1), the organization self-reproduces new capabilities and rules, thereby self-maintaining and self-evolving; qualified with "controlled," it becomes "controlled autopoiesis," fully isomorphic to "controlled self-boot" — the difference being only the paradigm's emphasis that self-boot must happen within governance boundaries.
 
 ### A.2 Comparison with Related Research
 
