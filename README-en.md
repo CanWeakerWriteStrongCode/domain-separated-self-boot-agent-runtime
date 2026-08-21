@@ -11,16 +11,18 @@ English | [中文](README.md)
 
 ## Introduction
 
-This project takes the **Domain-Separated Controlled Self-Boot Agent Architecture** as its design goal.
+This project takes the **Domain-Separated Controlled Self-Boot Agent Architecture** as its design goal; its core proposition: **how should production be organized so that humans and AI coordinate and play their distinct roles — supporting large-scale autonomous production and high-speed self-boot evolution, while remaining fully controllable and never spiraling out of control?**
 The system uses trustworthy security domains as its basic model; the privileged governance domain is a special trusted domain in the domain system.
 v0.1 adopts the minimal implementation of "privileged governance domain + several business domains"; the architecture itself **does not fix the number of domains**, supporting on-demand expansion and contraction.
 
 Targeting enterprise R&D scenarios, it integrates with IM and email systems and orchestrates the complete R&D pipeline of product, frontend, backend, testing, and deployment into an executable workflow (orchestrable, self-organizing);
 AI generates plugins/code artifacts; the workbench only outputs artifacts and is forbidden from directly operating production domains.
 
+The whole architecture revolves around **controlled self-boot**: AI self-boots boldly, producing its own tools and workflows, but all self-boot output must pass approval-based promotion, versioning, and rollback; the governance anchor uniformly holds the rules and boundaries, with humans in the loop approving and defining boundaries.
+
 ## 🧭 Architecture Overview
 
-The core idea in one sentence: **AI can self-upgrade, but is controllable at all times and never loses safety.**
+The core idea in one sentence: **how should production be organized so that humans and AI coordinate and play their distinct roles — supporting large-scale autonomous production and high-speed self-boot evolution, while remaining fully controllable and never spiraling out of control?**
 
 Vision: **intelligence grows freely, order remains permanently controllable** — building a "controllably free" enterprise-grade agent runtime.
 
@@ -56,6 +58,8 @@ flowchart TD
 - Integrates with IM / email bots; messages become requirements and knowledge base
 - Built-in lightweight visual workflow orchestration; configurable product, coding, testing, deployment stages
 - Integrates multiple LLM coding capabilities; outputs plugin code, manually revised before committing to Git
+- **Controlled self-boot**: AI-produced tools / workflows go through approval-based promotion, versioning, and rollback — freedom to evolve and governance control are two sides of one coin
+- Humans in the loop: self-boot promotion / process advancement / rule revision / artifact merging all have approval gates, with ultimate responsibility resting on humans
 - Supports external knowledge bases, RAG, graph databases, and object storage
 - Business domains can be added on demand; supports evolution toward distributed cluster scenarios
 
