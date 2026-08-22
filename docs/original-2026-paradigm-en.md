@@ -176,6 +176,31 @@ So the direction for reforming human organizations is clear: **establish a patte
 
 Humans are thus freed from "reviewing every line" to "reviewing patterns and defining boundaries": patternization makes routine review fast, two-level review does not miss the whole, boundary reports + test-driven verification make safety checkable, and the pattern library compounds efficiency — **only with a multi-pronged approach can approval keep up with the speed of self-boot**, avoiding both the line-by-line bottleneck and the rubber stamp.
 
+### 3.2.4 AI Proposes Only: Avoiding Alignment Risk via Centralized Approval
+
+**The theoretical origin: AI systems' "organizational failure" is isomorphic to human organizations but rooted differently**. The pain points of large human organizations are principal-agent problems, rent-seeking, and departmental silos — rooted in human self-interest, manifesting as organizational politics. Multi-AI-unit systems exhibit equivalent failures (goal misalignment, spec-gaming), but AI has no self-interest — the root is **incomplete goal specification**; organizational politics is replaced by the alignment problem. The organizational-economics analytical framework can be reused by replacing "human self-interest" with "incomplete-specification misalignment" (corresponding to §3.1's "unintentional distortion").
+
+**Humanity's two sets of governance means cannot be simply copied by AI**:
+
+- **Hard institutions** (audit, decentralization, budget, approval): on the AI side these can be engineered (sentinel audit agents, sandboxing, quotas, circuit breaking) — big companies have already done this; but they can only handle **detectable** vulnerabilities
+- **Soft constraints** (values, beliefs, cultural internalization): humans can genuinely internalize them; AI's RLHF / DPO / constitutional AI merely **simulates behavioral tendencies** — an auxiliary line of defense that **can be breached under strong optimization pressure and cannot backstop gray zones**
+- Humans fill institutional gaps with belief; AI needs to compensate via **global delayed-feedback loops** (recommendation systems have done this; general multi-agent still faces engineering challenges such as attribution and latency — see §3.2.3 test-driven verification)
+
+**The core proposal: AI proposes only, never makes real-time online decisions**. AI converts business requirements into plugin / microservice code and configuration, with **no business-execution authority**; after automated pre-review + (tiered) human review + simulation validation, confirming no "local optimum harms the global," the version is solidified and goes online — **production runs on deterministic static plugins; AI exits the runtime path**. This is the landing baseline of "controlled self-boot + humans in the loop": how far is control? **Up to "no AI online."**
+
+**Applicable scenarios and scale-based positioning**. Enterprise back-office, policy, risk-control, and data-operator scenarios change on a day/week cadence, and human review throughput can hold up; C-end real-time interactive agents do not fit this scheme. And it is **scale-based** — small and mid-size companies change slowly and **do not need full AI self-iteration**; centralized approval is exactly enough. Large companies need immediate response and have the financial resources to invest in **more complete AI self-guidance and control** (higher autonomy, more self-boot channels), echoing §7's dual forms: small/mid firms follow the converged form, large firms may follow a higher-autonomy form — but no matter how high the autonomy, the baseline **"red lines judged by humans, releases rollback-able" does not change**.
+
+**Key risks (human review cannot eliminate them)**:
+
+① AI writes plugins that look correct on the surface but hide negative externalities — code review alone cannot see it; **simulation must check global metrics**
+② Accumulated small requirements make review a bottleneck — need **tiered approval**: low-risk parameter changes auto-release, only high-risk needs human review
+③ A single plugin is fine, but combinations of plugins exhibit emergent negative externalities — need **integration regression simulation**
+④ Humans can be fooled by complex code and miss defects — need boundary reports + test coverage as backstop (see §3.2.3)
+
+**The essence (organizational analogy)**: abandon the high-risk/high-efficiency route of "fully delegating AI autonomous agents" and choose **centralized approval mode** — AI is like a senior proposal author holding only proposal power; humans hold the final decision power. This avoids spec-gaming alignment risk at the root during online operation, trading some dynamic flexibility for controllability, auditability, and rollback-ability.
+
+**The complete loop**: AI generates → automated pre-review → [simulation + tiered human review] → solidified plugin deployment → runtime global-metric monitoring, automatic circuit breaking on anomalies.
+
 ### 3.3 Three Structural Core Elements
 
 1. **Domain separation** — decomposes the system into mutually isolated, clearly-responsible independent units (domains). Units do not run exposed and do not cross boundaries; faults do not spread and chaos does not propagate.
